@@ -62,3 +62,42 @@ Capture hasil basis data Anda dan buatlah laporan di file README.md. Jelaskan ap
 
 Selain dalam hal deployment proyek dari Github, Vercel juga dapat membantu dalam pembuatan Database, pada praktikum ini dilakukan pembuatan database Postgre dengan Vercel, untuk mengakses Database ini maka perlu dibuat file .env dan menambahkan file tersebut ke .gitignore agar kode untuk akses database tersebut tidak ikut terpush ke Github.
 
+### Langkah 5: Melakukan seed ke basis data
+
+![gambar-praktikum](../pbf-pertemuan-09-nextjs-database/img/praktikum_1_langkah_5_1.png)
+
+![gambar-praktikum](../pbf-pertemuan-09-nextjs-database/img/praktikum_1_langkah_5_2.png)
+
+```bash
+ "seed": "node -r dotenv/config ./src/seeder/seed.js"
+```
+
+![gambar-praktikum](../pbf-pertemuan-09-nextjs-database/img/praktikum_1_langkah_5_3.png)
+
+```bash
+npm run seed
+```
+
+Error: Cannot find module 'dotenv/config'
+
+```bash
+npm i --save dotenv
+```
+
+Error: Cannot find module 'data.js'
+
+![gambar-praktikum](../pbf-pertemuan-09-nextjs-database/img/praktikum_1_langkah_5_4.png)
+
+Error: Cannot find module 'bcrypt'
+
+```bash
+npm i --save bcrypt
+```
+
+![gambar-praktikum](../pbf-pertemuan-09-nextjs-database/img/praktikum_1_langkah_5_5.png)
+
+**Soal 3**
+
+Capture hasil npm run seed Anda dan buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?
+
+Dari file yand sudah dibuat tersebut, masing-masing memiliki kegunaan. File seed.js berguna untuk menginputkan data dan tabel kedalam database, sedangkan data.js berguna untuk menentukan data apa saja yang akan diinputkan ditiap tabel.
