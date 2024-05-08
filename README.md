@@ -101,3 +101,34 @@ npm i --save bcrypt
 Capture hasil npm run seed Anda dan buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?
 
 Dari file yand sudah dibuat tersebut, masing-masing memiliki kegunaan. File seed.js berguna untuk menginputkan data dan tabel kedalam database, sedangkan data.js berguna untuk menentukan data apa saja yang akan diinputkan ditiap tabel.
+
+### Langkah 6: Menjelajah Basis Data
+
+![gambar-praktikum](../pbf-pertemuan-09-nextjs-database/img/praktikum_1_langkah_6_1.png)
+
+```bash
+SELECT invoices.amount, customers.name
+FROM invoices
+JOIN customers ON invoices.customer_id = customers.id
+WHERE invoices.amount = 666;
+```
+
+![gambar-praktikum](../pbf-pertemuan-09-nextjs-database/img/praktikum_1_langkah_6_2.png)
+
+Soal 4
+Capture hasil query Anda dan buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ? 
+
+Dari Query diatas berguna untuk menggabungkan tabel invoices dan customers, dengan hanya menampilkan data amount dan name dari masing-masing tabel dengan key berupa customer_id, dan data yang ditampilkan adalah amount dari invoices yang memiliki nilai 666.
+
+Cobalah eksekusi query SQL yang lain sesuai kreasi Anda, capture hasilnya dan jelaskan!
+
+![gambar-praktikum](../pbf-pertemuan-09-nextjs-database/img/praktikum_1_langkah_6_3.png)
+
+```bash
+SELECT customers.name, invoices.amount, invoices.status, invoices.date
+FROM invoices
+JOIN customers ON invoices.customer_id = customers.id
+WHERE customers.name = 'Lee Robinson';
+```
+
+Masih sama seperti sebelumnya yaitu menggabungkan tabel invoices dan customers berdasarkan customer_id, namun data yang ditampilkan adalah dari kolom customers.name, invoices.amount, invoices.status, dan invoices.date yang memiliki customers.name Lee Robinson.
