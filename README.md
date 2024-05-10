@@ -133,4 +133,37 @@ WHERE customers.name = 'Lee Robinson';
 
 Masih sama seperti sebelumnya yaitu menggabungkan tabel invoices dan customers berdasarkan customer_id, namun data yang ditampilkan adalah dari kolom customers.name, invoices.amount, invoices.status, dan invoices.date yang memiliki customers.name Lee Robinson.
 
-## Praktikum 2: 
+## Praktikum 2: Fetching Data (API)
+
+### Langkah 1: Membuat Global Query (Model)
+
+![gambar-praktikum](./img/praktikum_2_langkah_1_1.png)
+
+![gambar-praktikum](./img/praktikum_2_langkah_1_2.png)
+
+![gambar-praktikum](./img/praktikum_2_langkah_1_3.png)
+
+![gambar-praktikum](./img/praktikum_2_langkah_1_4.png)
+
+### Langkah 2: Membuat Komponen Atom
+
+![gambar-praktikum](./img/praktikum_2_langkah_2_1.png)
+
+```bash
+npm i --save @heroicons/react
+
+npm i --save clsx
+```
+
+![gambar-praktikum](./img/praktikum_2_langkah_2_2.png)
+
+![gambar-praktikum](./img/praktikum_2_langkah_2_3.png)
+
+![gambar-praktikum](./img/praktikum_2_langkah_2_4.png)
+
+Soal 5
+Lakukan push, kemudian perhatikan di akun dashboard Vercel project Anda. Capture dan lampirkan link aplikasi Anda yang telah berhasil di deploy, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?
+
+Pertama-tama dilakukan pembuatan model definitions yang berguna untuk menentukan struktur data dari setiap model atau tabel yang dibuat. Selanjutnya model query disini dapat membantu dalam memperoleh data dari database dengan berbagai query yang dibutuhkan, selain itu, pada model query ini juga dapat mengolah data yang didapat sebelum dikirimkan ke laman atau client.
+
+Dan pada components mulai dibuat komponen dan laman yang akan ditampilkan, beserta data yang didapatkan, namun saat ini laman yang berguna untuk menampilkan data masih belum dijalankan, untuk mencegah terjadinya error. Setelah components selesai, selanjutnya adalah memperbarui halaman page.tsx yang merupakan tampilan utama, sehingga components yang sudah dibuat dapat diimport dan disajikan di halaman website saat server dijalankan.
