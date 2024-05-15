@@ -171,3 +171,14 @@ Lakukan push, kemudian perhatikan di akun dashboard Vercel project Anda. Capture
 Pertama-tama dilakukan pembuatan model definitions yang berguna untuk menentukan struktur data dari setiap model atau tabel yang dibuat. Selanjutnya model query disini dapat membantu dalam memperoleh data dari database dengan berbagai query yang dibutuhkan, selain itu, pada model query ini juga dapat mengolah data yang didapat sebelum dikirimkan ke laman atau client.
 
 Dan pada components mulai dibuat komponen dan laman yang akan ditampilkan, beserta data yang didapatkan, namun saat ini laman yang berguna untuk menampilkan data masih belum dijalankan, untuk mencegah terjadinya error. Setelah components selesai, selanjutnya adalah memperbarui halaman page.tsx yang merupakan tampilan utama, sehingga components yang sudah dibuat dapat diimport dan disajikan di halaman website saat server dijalankan.
+
+### Langkah 3: Fetching Data untuk komponen RevenueChart
+
+![gambar-praktikum](./img/praktikum_2_langkah_3_1.png)
+
+![gambar-praktikum](./img/praktikum_2_langkah_3_2.png)
+
+**Soal 6**
+Lakukan capture dan push hasilnya, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?
+
+Data yang diperoleh dari revenueFetch diolah untuk ditampilkan dalam laman ReactJS, dengan dimulai dari mengekstrak data untuk sumbu X dan Y. Selanjutnya data revenue dikonversi ke format data map, dan terakhir adalah menampilkan data dari map revenue tersebut.
