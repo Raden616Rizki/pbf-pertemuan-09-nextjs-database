@@ -193,3 +193,11 @@ Data yang diperoleh dari revenueFetch diolah untuk ditampilkan dalam laman React
 Lakukan capture dan push hasilnya, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?
 
 Dengan mengakses model query untuk memperoleh 5 data terbaru pada function fetchLatestInvoices, limitasi dilakukan dengan menambahkan LIMIT 5 pada query data. Data disimpan pada latestInvoices yang selanjutnya di ekstrak ke map dan ditampilkan pada laman.
+
+## Tugas Praktikum
+
+![gambar-praktikum](./img/praktikum_tugas_1.png)
+
+![gambar-praktikum](./img/praktikum_tugas_2.png)
+
+Pada function fetchCardData, query bertujuan untuk mengambil total banyak data pada invoices dan customers, serta total banyak data untuk invoices dengan status paid dan pending. Dari hasil query tersebut datanya diekstrak menjadi data number yang selanjutnya 4 data tersebut akan direturn.
