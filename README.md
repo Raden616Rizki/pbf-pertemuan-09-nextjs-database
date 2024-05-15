@@ -182,3 +182,14 @@ Dan pada components mulai dibuat komponen dan laman yang akan ditampilkan, beser
 Lakukan capture dan push hasilnya, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?
 
 Data yang diperoleh dari revenueFetch diolah untuk ditampilkan dalam laman ReactJS, dengan dimulai dari mengekstrak data untuk sumbu X dan Y. Selanjutnya data revenue dikonversi ke format data map, dan terakhir adalah menampilkan data dari map revenue tersebut.
+
+### Langkah 4: Fetching Data untuk komponen LatestInvoices
+
+![gambar-praktikum](./img/praktikum_2_langkah_4_1.png)
+
+![gambar-praktikum](./img/praktikum_2_langkah_4_2.png)
+
+**Soal 7**
+Lakukan capture dan push hasilnya, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?
+
+Dengan mengakses model query untuk memperoleh 5 data terbaru pada function fetchLatestInvoices, limitasi dilakukan dengan menambahkan LIMIT 5 pada query data. Data disimpan pada latestInvoices yang selanjutnya di ekstrak ke map dan ditampilkan pada laman.
